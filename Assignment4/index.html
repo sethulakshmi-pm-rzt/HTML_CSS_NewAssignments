@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="Styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <title>
+        Assignment 4
+    </title>
+</head>
+<body>
+<div class="pageWrapper">
+
+    <!--page header starts here-->
+    <div class="headerOuterWrapper">
+
+        <!--primary header starts here-->
+        <div class="primaryHeader">
+            <div class="layoutContainer">
+                <input class="primaryHeader__menuButton fleft padding-10px"
+                       type="image"
+                       src="./Images/dashboard-btn.png"/>
+                <nav class="primaryHeader__navigation">
+                    <a class="primaryHeader__navigation__details fleft marginLeft" href=""></a>
+                    <a class="primaryHeader__navigation__tasks fleft marginLeft" href=""></a>
+                    <a class="primaryHeader__navigation__hazards fleft marginLeft" href=""></a>
+                    <a class="primaryHeader__navigation__controls fleft marginLeft" href=""></a>
+                    <a class="primaryHeader__navigation__history fleft marginLeft" href=""></a>
+                    <a class="primaryHeader__navigation__help fleft marginLeft" href=""></a>
+
+                </nav>
+                <input class="primaryHeader__addButton fright padding-10px"
+                       type="image"
+                       src="./Images/plus-btn.png"/>
+            </div>
+        </div>
+        <!--primary header ends here-->
+
+        <!--secondary header starts here-->
+        <div class="secondaryHeader">
+            <div class="layoutContainer">
+                <div class="secondaryHeader__right fleft">
+                    <span class="secondaryHeader__subtitle">
+                        ID: RA20120328
+                    </span>
+                    <h1 class="secondaryHeader__title">
+                        Some Job 123
+                    </h1>
+                    <ul class="secondaryHeader__infoList">
+                        <li class="secondaryHeader__infoList__item fleft">
+                            <span class="fontWeightNormal secondaryHeader__infoList__item__heading">RA STATUS</span>
+                            <span class="secondaryHeader__infoList__item__data">Open - Draft</span>
+                        </li>
+                        <li class="secondaryHeader__infoList__item fleft">
+                            <span class="secondaryHeader__infoList__item__heading">DUE DATE</span>
+                            <span class="secondaryHeader__infoList__item__data">04/20/2012</span>
+
+                        </li>
+                        <li class="secondaryHeader__infoList__item fleft">
+                            <span class="secondaryHeader__infoList__item__heading">ASSIGNED TO</span>
+                            <span class="secondaryHeader__infoList__item__data">John Doe (You)</span>
+                        </li>
+                        <li class="secondaryHeader__infoList__item fleft">
+                            <span class="secondaryHeader__infoList__item__heading">LAST UPDATED</span>
+                            <span class="secondaryHeader__infoList__item__data">03/28/2012 | By: John Doe</span>
+                        </li>
+                    </ul>
+                </div>
+                <img class="secondaryHeader__image" src="./Images/at&t-logo.jpg"/>
+            </div>
+        </div>
+        <!--secondary header ends here-->
+
+
+        <!--content header Wrapper starts here-->
+        <div class="contentTitleWrapper">
+            <div class="layoutContainer">
+                <h2 class="contentTitleWrapper__title fontWeightNormal">
+                    TASKS
+                </h2>
+                <button class="contentTitleWrapper__addButton">
+                    + New Task
+                </button>
+            </div>
+        </div>
+        <!--content header Wrapper ends here-->
+
+    </div>
+    <!--page header ends here-->
+
+    <!--content starts here-->
+    <div class="content">
+
+        <!--content list starts here-->
+        <ul class="content__list">
+
+            <!--content item list item1 starts here-->
+            <li class="content__list__item">
+                <div class="layoutContainer">
+
+                    <!--content left side image starts here-->
+                    <div class="content__list__item__imgWrapper">
+                        <img class="content__list__item__imgWrapper__img"
+                             src="./Images/img-thumb.jpg"/>
+                    </div>
+                    <!--content left side image ends here-->
+
+                    <!--content data starts here-->
+                    <div class="content__list__item__data">
+                        <h2 class="content__list__item__data__header">
+                            This is Some Task
+                        </h2>
+                        <p class="content__list__item__data__info"> Lorem Ipsum has been the industry's standard dummy
+                            text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to
+                            make a type specimen book Lorem Ipsum has been the industry's standard dummy
+                            text ever since.
+                        </p>
+                        <div class="content__list__item__data__attachmentWrapper">
+                            <span class="content__list__item__data__attachmentWrapper__attachment fleft">
+                            </span>
+                            <span class="content__list__item__data__attachmentWrapper__count">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <!--content data ends here-->
+
+                    <!--hazard info starts here-->
+                    <div class="content__list__item__info">
+
+                        <!--hazard component starts here-->
+                        <div class="hazardComp">
+                            <span class="hazardComp__header">
+                                HAZARD TYPE
+                            </span>
+
+                            <!--hazard data table starts here-->
+                            <table class="hazardComp__table">
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon1"></span>
+                                        <span class="hazardComp__table__count fright">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon2 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon3 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon4"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon5"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon6"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--hazard data table ends here-->
+
+                        </div>
+                        <!--hazard component ends here-->
+
+                        <!--severity component starts here-->
+                        <div class="severityComp">
+                            <span class="severityComp__header">
+                                SEVERITY
+                            </span>
+                            <ul class="severityComp__list">
+                                <li class="severityComp__list__item good">
+                                    25
+                                </li>
+                                <li class="severityComp__list__item average">
+                                    14
+                                </li>
+                                <li class="severityComp__list__item">
+
+                                </li>
+                            </ul>
+                        </div>
+                        <!--severity component ends here-->
+
+                    </div>
+                    <!--hazard info ends here-->
+
+                    <!--right side arrow starts here-->
+                    <div class="content__list__item__arrow">
+                        <button class="content__list__item__arrow__img">
+                        </button>
+                    </div>
+                    <!--right side arrow ends here-->
+
+                </div>
+            </li>
+            <!--content item list item1 ends here-->
+
+            <!--content item list item2 starts here-->
+            <li class="content__list__item">
+                <div class="layoutContainer">
+
+                    <!--content left side image starts here-->
+                    <div class="content__list__item__imgWrapper">
+                        <img class="content__list__item__imgWrapper__img"
+                             src="./Images/img-thumb2.jpg"/>
+                    </div>
+                    <!--content left side image ends here-->
+
+                    <!--content data starts here-->
+                    <div class="content__list__item__data">
+                        <h2 class="content__list__item__data__header">
+                            Mixing Chemical X
+                        </h2>
+                        <p class="content__list__item__data__info"> It is a long established fact that a reader will be
+                            distracted by the readable content of a page when looking at its layout. using 'Content
+                            here, content here', making it look like readable English.
+                        </p>
+                        <div class="content__list__item__data__attachmentWrapper">
+                            <span class="content__list__item__data__attachmentWrapper__attachment">
+                            </span>
+                            <span class="content__list__item__data__attachmentWrapper__count">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <!--content data ends here-->
+
+                    <!--hazard info starts here-->
+                    <div class="content__list__item__info">
+
+                        <!--hazard component starts here-->
+                        <div class="hazardComp">
+                            <span class="hazardComp__header">
+                                HAZARD TYPE
+                            </span>
+
+                            <!--hazard data table starts here-->
+                            <table class="hazardComp__table">
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon1 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon2"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon3"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon4"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon5 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon6 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--hazard data table ends here-->
+
+                        </div>
+                        <!--hazard component ends here-->
+
+                        <!--severity component starts here-->
+                        <div class="severityComp">
+                            <span class="severityComp__header">
+                                SEVERITY
+                            </span>
+                            <ul class="severityComp__list">
+                                <li class="severityComp__list__item good">
+                                    20
+                                </li>
+                                <li class="severityComp__list__item average">
+                                    02
+                                </li>
+                                <li class="severityComp__list__item bad">
+                                    03
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--severity component ends here-->
+
+                    </div>
+                    <!--hazard info ends here-->
+
+                    <!--right side arrow starts here-->
+                    <div class="content__list__item__arrow">
+
+                        <button class="content__list__item__arrow__img">
+
+                        </button>
+
+                    </div>
+                    <!--right side arrow ends here-->
+
+                </div>
+            </li>
+            <!--content item list item2 ends here-->
+
+            <!--content item list item3 starts here-->
+            <li class="content__list__item">
+                <div class="layoutContainer">
+
+                    <!--content left side image starts here-->
+                    <div class="content__list__item__imgWrapper">
+                        <img class="content__list__item__imgWrapper__img"
+                             src="./Images/img-thumb3.jpg"/>
+                    </div>
+                    <!--content left side image ends here-->
+
+                    <!--content data starts here-->
+                    <div class="content__list__item__data">
+                        <h2 class="content__list__item__data__header">
+                            Climbing Large Rocks
+                        </h2>
+                        <p class="content__list__item__data__info"> There are many variations of passages of Lorem Ipsum
+                            available, but the  majority have suffered alteration in some form, by injected humour, or
+                            randomised words which don't look even slightly believable.
+                        </p>
+                        <div class="content__list__item__data__attachmentWrapper">
+                            <span class="content__list__item__data__attachmentWrapper__attachment">
+                            </span>
+                            <span class="content__list__item__data__attachmentWrapper__count">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <!--content data ends here-->
+
+                    <!--hazard info starts here-->
+                    <div class="content__list__item__info">
+
+                        <!--hazard component starts here-->
+                        <div class="hazardComp">
+                                    <span class="hazardComp__header">
+                                        HAZARD TYPE
+                                    </span>
+
+                            <!--hazard data table starts here-->
+                            <table class="hazardComp__table">
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon1"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon2"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon3"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon4"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon5"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon6"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--hazard data table ends here-->
+
+                        </div>
+                        <!--hazard component ends here-->
+
+                        <!--severity component starts here-->
+                        <div class="severityComp">
+                            <span class="severityComp__header">
+                                SEVERITY
+                            </span>
+                            <ul class="severityComp__list">
+                                <li class="severityComp__list__item good">
+                                    20
+                                </li>
+                                <li class="severityComp__list__item average">
+                                    02
+                                </li>
+                                <li class="severityComp__list__item bad">
+                                    03
+                                </li>
+
+                            </ul>
+                        </div>
+                        <!--severity component ends here-->
+
+                    </div>
+                    <!--hazard info ends here-->
+
+                    <!--right side arrow starts here-->
+                    <div class="content__list__item__arrow">
+                        <button class="content__list__item__arrow__img">
+                        </button>
+                    </div>
+                    <!--right side arrow ends here-->
+
+                </div>
+            </li>
+            <!--content item list item3 ends here-->
+
+            <!--content item list item4 starts here-->
+            <li class="content__list__item">
+                <div class="layoutContainer">
+
+                    <!--content left side image starts here-->
+                    <div class="content__list__item__imgWrapper">
+                        <img class="content__list__item__imgWrapper__img"
+                             src="./Images/img-thumb.jpg"/>
+                    </div>
+                    <!--content left side image ends here-->
+
+                    <!--content data starts here-->
+                    <div class="content__list__item__data">
+                        <h2 class="content__list__item__data__header">
+                            Lifting Heavy Boxes
+                        </h2>
+                        <p class="content__list__item__data__info">The standard chunk of Lorem Ipsum used since the
+                            1500s is reproduced Lorem Ipsum has been the industry's standard dummy
+                            text ever since below for those interested. Sections 1.10.32 and 1.10.33 from "de
+                            Finibus Bonorum et Malorum".
+                        </p>
+                        <div class="content__list__item__data__attachmentWrapper">
+                            <span class="content__list__item__data__attachmentWrapper__attachment">
+                            </span>
+                            <span class="content__list__item__data__attachmentWrapper__count">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <!--content data ends here-->
+
+                    <!--hazard info starts here-->
+                    <div class="content__list__item__info">
+
+                        <!--hazard component starts here-->
+                        <div class="hazardComp">
+                            <span class="hazardComp__header">
+                                HAZARD TYPE
+                            </span>
+
+                            <!--hazard data table starts here-->
+                            <table class="hazardComp__table">
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon1 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon2 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon3 inactive"></span>
+                                        <span class="hazardComp__table__count">0</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon4"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon5"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon6"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--hazard data table ends here-->
+
+                        </div>
+                        <!--hazard component ends here-->
+
+                        <!--severity component starts here-->
+                        <div class="severityComp">
+                            <span class="severityComp__header">
+                                SEVERITY
+                            </span>
+                            <ul class="severityComp__list">
+                                <li class="severityComp__list__item good">
+                                    20
+                                </li>
+                                <li class="severityComp__list__item">
+                                </li>
+                                <li class="severityComp__list__item">
+                                </li>
+                            </ul>
+                        </div>
+                        <!--severity component ends here-->
+
+                    </div>
+                    <!--hazard info ends here-->
+
+                    <!--right side arrow starts here-->
+                    <div class="content__list__item__arrow">
+                        <button class="content__list__item__arrow__img">
+                        </button>
+                    </div>
+                    <!--right side arrow ends here-->
+
+                </div>
+            </li>
+            <!--content item list item4 ends here-->
+
+            <!--content item list item5 starts here-->
+            <li class="content__list__item">
+                <div class="layoutContainer">
+
+                    <!--content left side image starts here-->
+                    <div class="content__list__item__imgWrapper">
+                        <img class="content__list__item__imgWrapper__img"
+                             src="./Images/img-thumb4.jpg"/>
+                    </div>
+                    <!--content left side image ends here-->
+
+                    <!--content data starts here-->
+                    <div class="content__list__item__data">
+                        <h2 class="content__list__item__data__header">
+                            Pouring Hot Coffee
+                        </h2>
+                        <p class="content__list__item__data__info"> There are many variations of passages of Lorem Ipsum
+                            available,There are many variations of passages of Lorem Ipsum available, but the majority
+                            have suffered alteration in some form, by injected humour
+                        </p>
+                        <div class="content__list__item__data__attachmentWrapper">
+                            <span class="content__list__item__data__attachmentWrapper__attachment">
+                            </span>
+                            <span class="content__list__item__data__attachmentWrapper__count">
+                                2
+                            </span>
+                        </div>
+                    </div>
+                    <!--content data ends here-->
+
+                    <!--hazard info starts here-->
+                    <div class="content__list__item__info">
+
+                        <!--hazard component starts here-->
+                        <div class="hazardComp">
+                            <span class="hazardComp__header">
+                                HAZARD TYPE
+                            </span>
+
+                            <!--hazard data table starts here-->
+                            <table class="hazardComp__table">
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon1 fleft"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon2"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon3"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon4"></span>
+                                        <span class="hazardComp__table__count">2</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon5"></span>
+                                        <span class="hazardComp__table__count">15</span>
+                                    </td>
+                                    <td>
+                                        <span class="hazardComp__table__icon icon6"></span>
+                                        <span class="hazardComp__table__count">7</span>
+                                    </td>
+                                </tr>
+                            </table>
+                            <!--hazard data table ends here-->
+
+                        </div>
+                        <!--hazard component ends here-->
+
+                        <!--severity component starts here-->
+                        <div class="severityComp">
+                            <span class="severityComp__header">
+                                SEVERITY
+                            </span>
+                            <ul class="severityComp__list">
+                                <li class="severityComp__list__item good">
+                                    20
+                                </li>
+                                <li class="severityComp__list__item average">
+                                    14
+                                </li>
+                                <li class="severityComp__list__item bad">
+                                    09
+                                </li>
+                            </ul>
+                        </div>
+                        <!--severity component ends here-->
+
+                    </div>
+                    <!--hazard info ends here-->
+
+                    <!--right side arrow starts here-->
+                    <div class="content__list__item__arrow">
+                        <button class="content__list__item__arrow__img">
+                        </button>
+                    </div>
+                    <!--right side arrow ends here-->
+
+                </div>
+            </li>
+            <!--content item list item6 ends here-->
+
+        </ul>
+        <!--content list ends here-->
+
+    </div>
+    <!--content ends here-->
+
+    <!--page footer starts here-->
+    <div class="footer">
+        <div class="layoutContainer">
+            <img class="footer__logo"
+                 src="./Images/poweredby-remedy-interactive.jpg">
+
+            <button class="footer__submitButton">
+                Submit Risk Assessment for Approval
+            </button>
+        </div>
+    </div>
+    <!--page footer ends here-->
+
+</div>
+</body>
+</html>

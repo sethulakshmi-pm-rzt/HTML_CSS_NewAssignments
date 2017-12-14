@@ -1,0 +1,48 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: Arial;
+	font-size: 14px;
+	font-weight: 400;
+	min-width: 1000px;
+}
+
+.fright{
+	float: right;
+}
+
+.fleft{
+	float: left;
+}
+
+.height-100-per{
+	height: 100%;
+}
+
+.headerWrapper{
+	background-color: black;
+	width: 100%;
+	height: 59px;
+}
+
+.layout-container{
+	width: 1000px;
+	margin: auto;
+}
+
+.layout-container__navigator{
+	margin-top: 32px;
+}
+
+.layout-container__navigator__link{
+	text-decoration: none;
+    color: white;
+    padding: 11px;
+}
+
+.layout-container__navigator__link:hover {
+	background: url("./../Images/arrow.png") bottom no-repeat;
+}

@@ -1,0 +1,496 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+.fright{
+    float: right;
+}
+
+.fleft{
+    float: left;
+}
+
+.marginLeft{
+    margin-left: 45px;
+}
+
+
+.pageWrapper{
+    height: 100%;
+}
+
+.headerOuterWrapper{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+
+.fontWeightNormal{
+    font-weight: normal !important;
+}
+
+body{
+    font-family: Arial;
+    font-size: 14px;
+    font-weight: 400;
+    min-width: 1000px;
+}
+
+.layoutContainer{
+    width: 1000px;
+    height: 100%;
+    margin: auto;
+    box-sizing: border-box;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.primaryHeader{
+    height: 50px;
+    background: url(./../Images/hdr-navi.jpg) repeat-x;
+    box-sizing: border-box;
+    padding-top: 5px;
+}
+
+.primaryHeader__menuButton{
+    height: 35px;
+}
+
+.primaryHeader__addButton{
+    height: 35px;
+}
+
+.primaryHeader__navigation{
+
+}
+
+.primaryHeader__navigation__details{
+    background: url('./../Images/tab-navi.png') no-repeat -28px -7px;
+    width: 33px;
+    height: 35px;
+}
+
+.primaryHeader__navigation__tasks{
+    background: url('./../Images/tab-navi.png') no-repeat -105px -7px;
+    width: 32px;
+    height: 39px;
+}
+
+.primaryHeader__navigation__hazards{
+    background: url('./../Images/tab-navi.png') no-repeat -180px -7px;
+    width: 39px;
+    height: 35px;
+}
+
+.primaryHeader__navigation__controls{
+    background: url('./../Images/tab-navi.png') no-repeat -254px -7px;
+    width: 41px;
+    height: 38px;
+}
+
+.primaryHeader__navigation__history{
+    background: url('./../Images/tab-navi.png') no-repeat -336px -7px;
+    width: 34px;
+    height: 38px;
+}
+
+.primaryHeader__navigation__help{
+    background: url('./../Images/tab-navi.png') no-repeat -413px -7px;
+    width: 28px;
+    height: 40px;
+}
+
+.secondaryHeader{
+    background: white;
+    padding: 20px 10px 10px;
+}
+
+.secondaryHeader__subtitle{
+    font-weight: bold;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+}
+
+.secondaryHeader__title {
+    font-weight: normal;
+    font-size: 36px;
+}
+
+.secondaryHeader__infoList{
+    list-style: none;
+    display: inline-block;
+    border: 1px solid #969494;
+    border-radius: 7px;
+}
+
+.secondaryHeader__infoList__item{
+    float: left;
+    padding: 16px;
+    border-right: 1px solid #969494;
+}
+.secondaryHeader__infoList__item:last-child{
+    border: none;
+}
+
+.secondaryHeader__infoList__item__data{
+
+}
+
+.secondaryHeader__infoList__item__heading{
+    font-size: 12px;
+    display: block;
+    font-weight: bold;
+}
+
+.secondaryHeader__image{
+    width: 120px;
+    height: 128px;
+}
+
+.secondaryHeader__right {
+    float: left;
+    width: calc(100% - 120px);
+}
+
+.contentTitleWrapper{
+    background: url("./../Images/main-hdr-bg.jpg") repeat-x;
+    height: 45px;
+}
+
+.contentTitleWrapper__title{
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.contentTitleWrapper__addButton{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    border: none;
+    background: url(./../Images/dark-blue-lft.png) no-repeat 0 0;
+    width: 100px;
+    color: white;
+    height: 30px;
+    font-weight: bold;
+}
+
+
+
+
+.content{
+    position: absolute;
+    top: 254px;
+    right: 0;
+    left: 0;
+    bottom: 50px;
+    overflow: auto;
+    margin-left: 13px;
+    background-color: green;
+}
+
+.content__list{
+    list-style: none;
+}
+
+.content__list__item{
+    background: white;
+    display: flex;
+    height: 150px;
+    border: 1px none #d5d5d5;
+    border-bottom-style: solid;
+
+}
+
+.content__list__item:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+.content__list__item__imgWrapper{
+    border: 1px solid #d5d5d5;
+    box-sizing: border-box;
+    margin: 10px 15px 10px 0;
+}
+
+.content__list__item__imgWrapper__img{
+    height: 127px;
+    width: 130px;
+}
+
+.content__list__item__data{
+    width: calc(100% - 371px);
+    box-sizing: border-box;
+    padding: 20px 0;
+}
+
+.content__list__item__data__header{
+    font-weight: normal;
+    color: #363636;
+    padding: 0;
+    line-height: 15px;
+}
+
+.content__list__item__data__info{
+    padding-right: 30px;
+    padding-top: 15px;
+    font-size: 15px;
+    line-height: 18px;
+    padding-bottom: 2px;
+
+}
+
+.content__list__item__data__attachmentWrapper{
+    border: 1px solid #d5d5d5;
+    width: 48px;
+    height: 23px;
+    border-radius: 3px;
+    position: relative;
+}
+
+.content__list__item__data__attachmentWrapper__attachment{
+    background: url(./../Images/attachment.png) no-repeat 7px 1px;
+    width: 30px;
+    height: 20px;
+    display: inline-block;
+    float: left;
+}
+
+.content__list__item__data__attachmentWrapper__count{
+    float: right;
+    position: absolute;
+    right: 7px;
+    top: 3px;
+}
+
+
+.content__list__item__info{
+    width: 128px;
+    margin: 20px;
+}
+
+.hazardComp{
+
+}
+
+.hazardComp__header{
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.hazardComp__table{
+
+}
+
+.severityComp{
+    margin-top: 8px;
+}
+
+.severityComp__header{
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.severityComp__list{
+    list-style: none;
+    margin-top: 4px;
+    border: 1px solid #969494;
+    border-radius: 25px;
+    display: flex;
+    background-color: white;
+    height: 17px;
+}
+
+
+.content__list__item__arrow{
+    width: 29px;
+    padding-left: 15px;
+    display: flex;
+}
+
+
+
+.content__list__item__arrow__img{
+    background: url("./../Images/list-arrow.png") no-repeat center;
+    width: 29px;
+    height: 100%;
+    border: none;
+}
+
+.hazardComp__table{
+    width: 100%;
+}
+
+table, th, td {
+    border: 1px solid #d5d5d5;
+    border-collapse: collapse;
+}
+
+table.hazardComp__table td:nth-child(n){
+    width: 40px;
+    height: 30px;
+    position: relative;
+}
+
+.hazardComp__table__icon{
+    float: left;
+    width: 30px;
+    height: 21px;
+}
+
+.hazardComp__table__icon.icon1{
+    background: url('./../Images/icon-item.png') no-repeat 7px 0;
+}
+
+.hazardComp__table__icon.icon1.inactive{
+    background: url('./../Images/icon-deactive.png') no-repeat 7px 0;
+}
+
+.hazardComp__table__icon.icon2{
+    background: url('./../Images/icon-item.png') no-repeat -59px 0;
+}
+
+.hazardComp__table__icon.icon2.inactive{
+    background: url('./../Images/icon-deactive.png') no-repeat -59px 0;
+}
+
+.hazardComp__table__icon.icon3{
+    background: url('./../Images/icon-item.png') no-repeat -127px 0;
+}
+
+.hazardComp__table__icon.icon3.inactive{
+    background: url('./../Images/icon-deactive.png') no-repeat -127px 0;
+}
+
+.hazardComp__table__icon.icon4{
+    background: url('./../Images/icon-item.png') no-repeat 7px -28px;
+}
+
+.hazardComp__table__icon.icon4.inactive{
+    background: url('./../Images/icon-deactive.png') no-repeat 7px -28px;
+}
+
+.hazardComp__table__icon.icon5{
+    background: url('./../Images/icon-item.png') no-repeat -59px -28px;
+}
+
+.hazardComp__table__icon.icon5.inactive{
+    background: url(./../Images/icon-deactive.png) no-repeat -59px -28px;
+}
+
+.hazardComp__table__icon.icon6{
+    background: url('./../Images/icon-item.png') no-repeat -127px -28px;
+}
+
+.hazardComp__table__icon.icon6.inactive{
+    background: url('./../Images/icon-deactive.png') no-repeat -127px -28px;
+}
+
+.hazardComp__table__count{
+    float: right;
+    position: absolute;
+    right: 5px;
+    top: 7px;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.severityComp__list__item{
+    color: white;
+    font-weight: bold;
+}
+
+.severityComp__list__item.good{
+    background: url('./../Images/green-color.jpg') repeat;
+    border-radius: 25px 0 0 25px;
+}
+
+.severityComp__list__item.average{
+    background: url('./../Images/orange-color.jpg') repeat;
+}
+
+.severityComp__list__item.bad{
+    background: url('./../Images/red-color.jpg') repeat;
+    border-radius: 0 25px 25px 0;
+}
+
+
+.severityComp__list__item:last-child{
+    border: none;
+}
+
+.severityComp__list li{
+    display: inline-block;
+    flex: 1;
+    padding-left: 10px;
+    border-right: 1px solid white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: #fdfdfd;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    height: 50px;
+}
+
+.footer__logo{
+    width: 230px;
+    height: 40px;
+    padding-top: 10px;
+}
+
+.footer__submitButton{
+    color: white;
+    background-color: #0097d0;
+    font-size: 15px;
+    height: 35px;
+    width: 300px;
+    margin: 10px 0 10px 10px;
+    border: none;
+    border-radius: 7px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
