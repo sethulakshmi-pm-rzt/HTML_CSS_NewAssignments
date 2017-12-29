@@ -12,6 +12,7 @@
 html, body {
     font-weight: 400;
     font-style: normal;
+    display: block;
 }
 
 body {
@@ -52,13 +53,54 @@ body {
     font-size: 22px;
     line-height: 20px;
     color: #abb0ac;
-    width: 9%;
+    /*width: 9%;*/
 }
 
 .headerWrapper__rightHeader{
     display: inline-block;
-    width: calc(100% - 61.8%);
+    /*width: calc(100% - 61.8%);*/
     height: 100%;
+}
+
+.headerWrapper__rightsideIcons{
+    height: 100%;
+    width: 14%;
+    display: none;
+
+}
+
+.headerWrapper__rightsideIcons__first{
+    display: inline-block;
+}
+
+.headerWrapper__rightsideIcons__first__icon{
+    background: url('./../Images/left-nav-icon.jpg') no-repeat 0 0;
+    width: 18px;
+    height: 13px;
+    display: inline-block;
+}
+
+.headerWrapper__rightsideIcons__second{
+
+}
+
+.headerWrapper__rightsideIcons__second__icon{
+    background: url('./../Images/hdr-nav-icon.jpg') no-repeat 0 0;
+    width: 18px;
+    height: 15px;
+    display: inline-block;
+}
+
+@media (min-width: 728px) and (max-width: 1024px) {
+    .headerWrapper__rightHeader{
+        display: none;
+    }
+
+    .headerWrapper__rightsideIcons{
+        display: block;
+    }
+
+
 }
 
 .userProfile{
@@ -66,7 +108,7 @@ body {
     position: relative;
     margin-left: 15px;
     padding-right: 36px;
-    width: 30%;
+    /*width: 30%;*/
 }
 
 .userProfile__img{
@@ -954,6 +996,7 @@ body {
 .calendar__primaryHeader__right{
     display: inline-block;
     height: 100%;
+    width: 28.99%;
 }
 
 .calendar__primaryHeader__right__month{
@@ -1017,7 +1060,8 @@ body {
 
 .calendar__secondaryHeader__arrow1{
     background: url('./../Images/lft-arrow.jpg') no-repeat 0 0;
-    width: 12px;
+    /*width: 12px;*/
+    width: 2.006%;
     height: 12px;
     display: inline-block;
 }
@@ -1030,7 +1074,8 @@ body {
 
 .calendar__secondaryHeader__arrow2{
     background: url('./../Images/rght-arrow.jpg') no-repeat 0 0;
-    width: 12px;
+    /*width: 12px;*/
+    width: 2.006%;
     height: 12px;
     display: inline-block;
 }
@@ -1043,7 +1088,6 @@ body {
 }
 
 .calendar__data__header{
-    width: calc(100% / 7);
     height: 30px;
     background: url("./../Images/db-hdr-bg.jpg") repeat-x;
     font-size: 13px;
@@ -1159,6 +1203,7 @@ body {
 
 table, th, td {
     border: 1px solid #d0cfcf;
+    width: calc(100% / 7);
 }
 
 td{
@@ -1235,31 +1280,36 @@ td{
 
 .notification1{
     background: url('./../Images/right-mark.jpg') no-repeat 0 0;
-    width: 47px;
+    /*width: 47px;*/
+    width: 8.056%;
     height: 44px;
 }
 
 .notification2{
     background: url(./../Images/bulb-img.jpg) no-repeat 0 0;
-    width: 46px;
+    /*width: 46px;*/
+    width: 7.885%;
     height: 44px;
 }
 
 .notification3{
     background: url('./../Images/mobile-img.jpg') no-repeat 0 0;
-    width: 41px;
+    /*width: 41px;*/
+    width: 7.028%;
     height: 44px;
 }
 
 .notification4{
     background: url('./../Images/right-mark2.jpg') no-repeat 0 0;
-    width: 43px;
+    /*width: 43px;*/
+    width: 7.37%;
     height: 43px;
 }
 
 .news__body__item__content{
     display: inline-block;
-    width: 400px;
+    /*width: 400px;*/
+    width: 68.56%;
     height: 100%;
     margin-left: 15px;
 }
@@ -1270,14 +1320,16 @@ td{
 }
 
 .news__body__item__content__data{
-    width: 390px;
+    /*width: 390px;*/
+    width: 97.5%;
     margin-top: 5px;
     font-size: 13px;
 }
 
 .news__body__item__date{
     display: inline-block;
-    width: 30px;
+    /*width: 30px;*/
+    width: 5.142%;
     height: 100%;
 }
 
@@ -1322,28 +1374,32 @@ td{
 
 .comments__userPic{
     background: url('./../Images/face1.png') no-repeat 0 0;
-    width: 33px;
+    /*width: 33px;*/
+    width: 2.587%;
     height: 32px;
     display: inline-block;
 }
 
 .comments__userPic2{
     background: url('./../Images/face2.png') no-repeat 0 0;
-    width: 32px;
+    /*width: 32px;*/
+    width: 2.587%;
     height: 33px;
 }
 
 .comments__userPic3{
     background: url('./../Images/face3.png') no-repeat 0 0;
-    width: 33px;
+    /*width: 33px;*/
     height: 31px;
+    width: 2.587%;
 }
 
 .comments__box{
     display: inline-block;
     margin-left: 10px;
     height: 100%;
-    width: calc(100% - 48px);
+    /*width: calc(100% - 48px);*/
+    width: 96.238%;
     border-radius: 7px;
     border: 1px solid #d0cfcf;
     box-shadow: inset 0 0 4px 0px #dad3d3;
@@ -1351,6 +1407,7 @@ td{
 
 .comments__box__header{
     background: #fafafa;
+    width: 100%;
     height: 33px;
     padding-left: 10px;
     padding-right: 10px;
@@ -1361,7 +1418,8 @@ td{
 
 .comments__box__header__arrow{
     position: absolute;
-    width: 10px;
+    /*width: 10px;*/
+    width: 0.816%;
     height: 10px;
     background: white;
     top: 10px;
@@ -1381,10 +1439,12 @@ td{
 }
 .comments__box__header__left{
     display: inline-block;
+    width: 35%;
 }
 
 .comments__box__header__right{
     display: inline-block;
+    width: 11%;
 }
 
 .comments__box__header__left__button{
@@ -1483,7 +1543,8 @@ td{
 .comments__box__user4__img{
     display: inline-block;
     background: url(./../Images/face2.png) no-repeat 0 0;
-    width: 45px;
+    /*width: 45px;*/
+    width: 3.732%;
     height: 46px;
     background-size: 42px;
 }
@@ -1504,7 +1565,8 @@ td{
 .comments__box__header__content__box{
     display: inline-block;
     height: 85px;
-    width: 175px;
+    /*width: 175px;*/
+    width: 14.513%;
     margin: 22px 0px 0px 25px;
     background-color: #cccccc;
     border: #f7f7f7 solid 3px;
@@ -1534,7 +1596,7 @@ td{
     display: inline-block;
     height: 100%;
     width: 5px;
-    background: #f2f2f2;
+    background: #e0e0e0;
 }
 
 .comments__box__header__content__text{
@@ -1557,7 +1619,8 @@ td{
 .comments__box__header__footer__attachment{
     display: inline-block;
     background: url('./../Images/attch.jpg') no-repeat 1px 1px;
-    width: 15px;
+    /*width: 15px;*/
+    width: 1.234%;
     height: 15px;
 }
 
